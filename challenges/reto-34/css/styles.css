@@ -1,0 +1,58 @@
+/* 
+Colors:
+  Background: #1A4341
+  Yellow: #F3AC3C
+  Olive: #998235
+*/
+
+.box {
+  background-color: #1a4341;
+}
+
+.shape-1 {
+  width: 100px;
+  height: 100px;
+  background-color: #F3AC3C;
+  border-radius: 50%;
+  position: relative;
+  top: 100px;
+  left: 150px;
+}
+.shape-1::after{
+  content: '';
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  width: 30px;
+  height: 30px;
+  background-color: #998235;
+  border-radius: 50%;
+  box-shadow: 14px 40px 0 -5px #998235, 40px -10px 0 -10px #998235;
+}
+
+.shape-2, .shape-2::after, .shape-2::before {
+  width: 180px;
+  height: 10px;
+  background-color: #F3AC3C;
+  border-radius: 10px;
+  position: relative;
+  top: 50px;
+  left: 120px;
+  rotate: 30deg;
+  z-index: -1;
+}
+.shape-2::after{
+  content: '';
+  position: absolute;
+  top: -8px;
+  left: -18px;
+  rotate: 60deg;
+}
+.shape-2::before{
+  content: '';
+  position: absolute;
+  top: -8px;
+  left: -7px;
+  rotate: 120deg;
+}
+

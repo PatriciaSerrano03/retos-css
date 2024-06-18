@@ -1,0 +1,37 @@
+/* 
+IMPORTANTE: USAR UN SOLO DIV
+Colors:
+  Background:#E38F66
+  Circle: #AA445F
+  Yellow: #F7EC7D
+*/
+
+.box {
+  background-color: #e38f66;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.shape {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  background-color: #AA445F;
+  border-radius: 50%;
+}
+.shape::after{
+  content: '';
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  width: 140px;
+  height: 140px;
+  background-color: #F7EC7D;
+  border-radius: 50%;
+  background-color: transparent ;
+  border: 30px solid #F7EC7D;
+  border-top-color: transparent;
+  border-bottom-color: transparent;
+  rotate: -45deg;
+}

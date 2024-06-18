@@ -1,0 +1,71 @@
+/* 
+Colors:
+  Background: #1A4341
+  Yellow: #F3AC3C
+  Olive: #998235
+*/
+
+.box {
+  background-color: #1a4341;
+}
+
+.shape-1 {
+  width: 100px;
+  height: 140px;
+  background-color: #998235;
+  position: relative;
+  top: 110px;
+  left: 150px;
+  border-radius: 20px;
+}
+.shape-1::after{
+  content: '';
+  position: absolute;
+  width: 100px;
+  height: 60px;
+  background-color: #F3AC3C;
+  border-radius: 20px;
+}
+.shape-1::before{
+  content: '';
+  position: absolute;
+  top: 30px;
+  width: 50px;
+  height: 50px;
+  background-color: #998235;
+  border-radius: 50%;
+  box-shadow: 50px 0 #F3AC3C, 115px -55px 0 -15px #998235, 115px -25px 0 -15px #998235;
+  z-index: 2;
+}
+
+.shape-2 {
+  width: 20px;
+  height: 40px;
+  background-color: #F3AC3C;
+  border-radius: 20px;
+  position: relative;
+  top: -80px;
+  left: 190px;
+  box-shadow: 90px -10px #F3AC3C;
+}
+.shape-2::after{
+  content: '';
+  position: absolute;
+  width: 20px;
+  height: 150px;
+  background-color: #F3AC3C;
+  border-radius: 20px;
+  top: -75px;
+  left: 23px;
+  rotate: 90deg;
+}
+.shape-2::before{
+  content: '';
+  position: absolute;
+  top: 30px;
+  left: -15px;
+  width: 50px;
+  height: 50px;
+  background-color: #F3AC3C;
+  border-radius: 10px;
+}

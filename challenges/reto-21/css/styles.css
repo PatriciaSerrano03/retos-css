@@ -1,0 +1,20 @@
+/* 
+IMPORTANTE: USAR UN SOLO DIV
+Colors:
+  Background: #0b2429
+  Yellow:#F3AC3C
+*/
+
+.box {
+  background-color: #0b2429;
+}
+
+.triangle {
+  width: 200px;
+  height: 200px;
+  background-color: #F3AC3C;
+  rotate: 45deg;
+  position: relative;
+  top: -100px;
+  left: -100px;
+}

@@ -1,0 +1,31 @@
+/* 
+IMPORTANTE: USAR UN SOLO DIV
+Colors:
+  Background: #6592CF
+  Blue: #243D83
+*/
+
+.box {
+  background-color: #6592cf;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.letter {
+  width: 200px;
+  height: 200px;
+  background-color: transparent;
+  border-radius: 50%;
+  border: 50px solid #243D83;
+}
+.letter::after{
+  content: '';
+  position: absolute;
+  width: 50px;
+  height: 110px;
+  background-color: #243D83;
+  top: 50px;
+  left: 100px;
+  box-shadow: 50px 0 #6592cf;
+}

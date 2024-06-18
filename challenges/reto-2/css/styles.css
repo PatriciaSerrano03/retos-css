@@ -1,0 +1,34 @@
+/* 
+IMPORTANTE: USAR UN SOLO DIV
+Colors:
+  Background: #1e3163
+  Soap: #ff5f54
+  Shadow: #bf4740
+*/
+
+.box {
+  background-color: #1e3163;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.soap {
+  position: relative;
+  width: 205px;
+  height: 100px;
+  background-color: #ff5f54;
+  border-radius: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0px 20px #bf4740 ;
+}
+.soap::after{
+  content: '';
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  width: 140px;
+  height: 40px;
+  background-color: #bf4740;
+  border-radius: 20px;
+}
